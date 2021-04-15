@@ -1,39 +1,87 @@
 .Post {
     display: flex;
-    justify-content: space-around;
-    background: blanchedalmond;
-    width: 100%;
-
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 0.5rem;
+    background-color: var(--color-background);
 }
 
 .Post__message {
     display: flex;
+    width: 75%;
+}
+
+.Post__info-and-image {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 10px;
 }
 
 .Post__info {
     display: flex;
     flex-direction: column;
     text-align: left;
+    margin-left: 1rem;;
 }
 
+.Post__image-and-title {
+    position: relative;
+}
 
 .Post__title {
-    font-size: 2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0rem;
+    left: 0rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.336);
+    text-align: left;
+    font-family: var(--font-sans-serif-title);
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: white;
+
 }
 
 .Post__text {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.Post__date {
+    font-size: 1.1rem;
+
 }
 
 .Post__image {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
+    border-radius: 5px;
 }
 
+.Post__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 12rem;
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    background-color: var(--color-highlight);
+    box-shadow: 2px 2px 2px grey;
+}
 
 .User__image {
     border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
+    width: 8rem;
+    height: 8rem;
+    margin-bottom: 0.5rem;
+}
+
+.User__name {
+    font-size: 1.5rem;
 }
 

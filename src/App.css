@@ -12,17 +12,32 @@ html {
    font-size: 62.5%;
  }
 
+ /* Color Palette */
+
+ html {
+   --color-primary: #343f56;
+   --color-secondary: #387c6d;
+   --color-highlight: #e9896a;
+   --color-background: #f8f5f1;
+
+   --font-sans-serif: 'Lato', sans-serif;
+   --font-sans-serif-title: 'Oswald', sans-serif;
+ }
+
+
 /* App Structure */
+
 
 .App {
   text-align: center;
   display: flex;
+  font-family: var(--font-sans-serif);
 }
 
 .App__sidebar {
   display: flex;
   flex: 1 1 25%;
-  background-color: grey;
+  background-color: white;
   width: 30rem;
   height: 100vh;
 }
@@ -33,6 +48,6 @@ html {
 }
 
 .App__randompost {
-  background-color: grey;
+  background-color: white;
   flex: 1 1 25%;
 }
