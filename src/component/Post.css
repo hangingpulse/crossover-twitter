@@ -1,0 +1,39 @@
+.Post {
+    display: flex;
+    justify-content: space-around;
+    background: blanchedalmond;
+    width: 100%;
+
+}
+
+.Post__message {
+    display: flex;
+}
+
+.Post__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+
+.Post__title {
+    font-size: 2rem;
+}
+
+.Post__text {
+    font-size: 1.5rem;
+}
+
+.Post__image {
+    width: 10rem;
+    height: 10rem;
+}
+
+
+.User__image {
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
