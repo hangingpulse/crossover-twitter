@@ -36,10 +36,33 @@ html {
 
 .App__sidebar {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   flex: 1 1 25%;
   background-color: white;
   width: 30rem;
   height: 100vh;
+}
+
+.App__currentUser {
+  background-color: var(--color-highlight);
+  margin: 2rem 0;
+  width: 20rem;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px black;
+  
+}
+
+.currentUser__picture {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem 0;
+}
+
+.currentUser__name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .App__posts {
@@ -50,4 +73,45 @@ html {
 .App__randompost {
   background-color: white;
   flex: 1 1 25%;
+}
+
+/* Search Field styling */
+.Searchfield__container {
+  display: flex;
+  margin-top: 2rem;
+  background-color: var(--color-background);
+  height: 5rem;
+  align-items: center;
+}
+
+.Searchfield__input {
+  height: 3rem;
+}
+
+.Searchfield__button--search {
+  height: 3rem;
+  font-family: var(--font-sans-serif);
+  background-color: var(--color-secondary);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.Searchfield__button--clear {
+  height: 3rem;
+  font-family: var(--font-sans-serif);
+  background-color: var(--color-primary);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.Searchfield__button--search:active {
+  transform: translateY(1px);
+  cursor: pointer; 
+}
+
+.Searchfield__button--clear:active {
+  transform: translateY(1px);
+  cursor: pointer; 
 }

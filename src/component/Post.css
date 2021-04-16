@@ -2,28 +2,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2rem;
+    margin: 1rem;
     padding: 0.5rem;
     background-color: var(--color-background);
 }
 
+
+.Post:hover {
+    transform: scale(1.05)
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+.link:visited {
+    color: black;
+}
+
 .Post__message {
     display: flex;
-    width: 75%;
+    min-width: 70%;
 }
 
 .Post__info-and-image {
     display: flex;
     align-items: center;
-    padding: 1rem;
-    border-radius: 10px;
+    padding: 0.5rem;
 }
 
 .Post__info {
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-left: 1rem;;
+    margin-left: 1rem;
 }
 
 .Post__image-and-title {
@@ -43,12 +55,12 @@
     font-size: 1.8rem;
     letter-spacing: 1px;
     color: white;
-
 }
 
 .Post__text {
     font-size: 1.3rem;
     margin-bottom: 1rem;
+    white-space: pre-wrap;
 }
 
 .Post__date {
@@ -65,9 +77,10 @@
 .Post__user {
     display: flex;
     flex-direction: column;
+    flex: 1 1 30%;
     justify-content: center;
-    height: 12rem;
-    margin-left: 1rem;
+    align-items: center;
+    margin: 0 1rem;
     padding: 1rem 1rem;
     border-radius: 10px;
     background-color: var(--color-highlight);
@@ -84,4 +97,3 @@
 .User__name {
     font-size: 1.5rem;
 }
-

@@ -9,7 +9,7 @@ function Post( { user, message }) {
 
 return (
   <Link className='link' to={`/${user.userid}/${message.messageid}`}>
-  <div className="Post">
+  <div className="Post RandomPost">
       <div className="Post__message">
           <div className="Post __info-and-image">
               <div className="Post__image-and-title">
@@ -19,7 +19,6 @@ return (
               <div className="Post__info">
                   <div className="Post__text">
                   {messageText}
-            
                   </div>
                   <div className="Post__date">{message.createddate}</div>
               </div>
