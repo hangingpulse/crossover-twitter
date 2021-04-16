@@ -70,15 +70,28 @@ html {
   flex: 1 1 50%;
 }
 
+.App__title {
+  font-family: var(--font-sans-serif-title);
+  letter-spacing: 2px;
+  font-size: 3rem;
+  color: var(--color-highlight)
+}
+
 .App__randompost {
   background-color: white;
   flex: 1 1 25%;
+}
+
+.App__randompost__title {
+  font-size: 2rem;
+  margin: 2rem;
 }
 
 /* Search Field styling */
 .Searchfield__container {
   display: flex;
   margin-top: 2rem;
+  padding: 1rem;
   background-color: var(--color-background);
   height: 5rem;
   align-items: center;
@@ -86,6 +99,7 @@ html {
 
 .Searchfield__input {
   height: 3rem;
+  margin: 0.5rem;
 }
 
 .Searchfield__button--search {

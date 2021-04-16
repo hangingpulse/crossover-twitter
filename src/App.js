@@ -45,19 +45,17 @@ return (
         }
       </div>
         <Switch>
+          
           <Route path={`/:userid/:messageid`} >
             <SinglePost />
           </Route>
           <Route path={`/:userid`} >
             <User />
           </Route>
-
-          {/* user page depending on userID - (optional)biography, users' tweet  */}
-
-          {/* <Route path={`/${users.Id}/${messages.Id}`} > */}
-              {/* <Input /> textfield */}
           <Route path="/" >
+            
             <div className="App__posts">
+            <h1 className="App__title">Welcome to Twipster</h1>
               { isLoading ||
                 checkSearchResult()
                 
